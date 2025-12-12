@@ -18,8 +18,14 @@
           return;
         }
       } catch(e){}
-      document.body.innerHTML = '<div style="padding:24px;font-family:sans-serif"><h1>App not found</h1><p>Couldn\\'t load <code>code-runner.html</code>. Make sure the file exists in the repo root and is named exactly that (case-sensitive).</p><p><a href="README.md" target="_blank">Open README</a></p></div>';
-    })();
+      document.body.innerHTML = `
+  <div style="padding:24px;font-family:sans-serif">
+    <h1>App not found</h1>
+    <p>Couldn't load <code>code-runner.html</code>. Make sure the file exists in the repo root and is named exactly that (case-sensitive).</p>
+    <p><a href="README.md" target="_blank">Open README</a></p>
+  </div>
+`;
+
   </script>
 </body>
 </html>
